@@ -85,6 +85,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'US_AUDIT_VSTS_Training'
+              azureSubscription: 'clint-devops-training'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'      
